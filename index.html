@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/depart_radiology.dwt" codeOutsideHTMLIsLocked="false" --><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>RWJMS - Departments and Institutes - Radiology</title>
+  <style type="text/css">
+  #on2, #subset2 {display:block !important;}
+  #plus2, #minus2 {display:none !important;} 
+  </style>
+  <!-- InstanceEndEditable -->
+  
+  <link rel="stylesheet" href="http://rwjmsasset01.umdnj.edu/css/rwjms/rwjms_master3.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="http://rwjmsasset01.umdnj.edu/css/content.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" charset="utf-8">
+  
+  <script type="text/javascript" src="../../src/adapter/shadowbox-base.js"></script>
+  <script type="text/javascript" src="../../src/shadowbox.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+  $("#submit").click(function( event ) {
+    // reset result fields after button clicks
+    $("#result1").html("ALBI Score");
+     $("#result2").html("ALBI Grade");
+     
+     
+     event.preventDefault();
+     var b = $("#bilirubin").val();
+     var a = $("#albumin").val();
+     
+     if (b == "" || a == "" || isNaN(b) || isNaN(a)) {
+       alert("Please enter valid number for both fields");
+         return;
+     }
+     
+     var rst1 = (Math.log10(b * 17.1)) * 0.66 - a * 0.852 ;
+     var rst2 = -1;
+
+     if (rst1 <= -2.6) {
+       rst2 = 1;
+     } else if (rst1 <= -1.39) {
+       rst2 = 2;
+     } else {
+       rst2 = 3;
+     }
+
+     $("#result1").html("ALBI Score: " + rst1);
+     $("#result2").html("ALBI Grade: " + rst2);
+   });
+});
+  </script>
+
+  <script type="text/javascript">
+
+  
+  Shadowbox.loadSkin('classic', 'http://rwjms.umdnj.edu/src/skin');
+  Shadowbox.loadLanguage('en', 'http://rwjms.umdnj.edu/src/lang');
+  Shadowbox.loadPlayer(['flv', 'html', 'iframe', 'img', 'qt', 'swf', 'wmp'], 'http://rwjms.umdnj.edu/src/player');
+  
+  window.onload = function(){
+  
+  Shadowbox.init();
+  
+  };
+  
+  </script>
+  
+  <link rel="stylesheet" type="text/css" href="http://rwjms.umdnj.edu/src/skin/classic/skin.css"><script type="text/javascript" src="http://rwjms.umdnj.edu/src/skin/classic/skin.js"></script><script type="text/javascript" src="http://rwjms.umdnj.edu/src/lang/shadowbox-en.js"></script><script type="text/javascript" src="http://rwjms.umdnj.edu/src/player/shadowbox-flv.js"></script><script type="text/javascript" src="http://rwjms.umdnj.edu/src/player/shadowbox-html.js"></script><script type="text/javascript" src="http://rwjms.umdnj.edu/src/player/shadowbox-iframe.js"></script><script type="text/javascript" src="http://rwjms.umdnj.edu/src/player/shadowbox-img.js"></script><script type="text/javascript" src="http://rwjms.umdnj.edu/src/player/shadowbox-qt.js"></script><script type="text/javascript" src="http://rwjms.umdnj.edu/src/player/shadowbox-swf.js"></script><script type="text/javascript" src="http://rwjms.umdnj.edu/src/player/shadowbox-wmp.js"></script>
+  <script src="http://rwjmsasset01.umdnj.edu/scripts/gmenu.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="http://rwjmsasset01.umdnj.edu/css/rwjms/departmenttab.css" type="text/css" charset="utf-8">
+  
+  <!-- InstanceBeginEditable name="head" -->
+  <!-- InstanceEndEditable -->
+  <!--[if IE]>
+    <style type="text/css">
+    body {word-wrap: break-word;}
+  
+    </style>
+  <![endif]-->
+  <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+  .en-markup-crop-options {
+      top: 18px !important;
+      left: 50% !important;
+      margin-left: -100px !important;
+      width: 200px !important;
+      border: 2px rgba(255,255,255,.38) solid !important;
+      border-radius: 4px !important;
+  }
+  
+  .en-markup-crop-options div div:first-of-type {
+      margin-left: 0px !important;
+  }
+  </style></head>
+  <body>
+  <div id="container">
+    <div id="top">
+    <a href="http://rwjms.umdnj.edu"><img src="http://rwjmsasset01.umdnj.edu/media/images/transparent.gif" id="linkback" alt="link to RWJMS home page"></a>
+      <div id="quick"> <a rel="shadowbox;width=331;height=215" class="option" title="Quick Links" href="../../pdq_links.html">Quick Links&nbsp;&nbsp;<img src="http://rwjmsasset01.umdnj.edu/media/images/pop_icon.gif" alt=""></a></div>
+     <div id="searchnew"> 
+        <form action="http://www2.umdnj.edu/cgi-bin/combo-search-ist-new.cgi" method="search" name="search" id="searchit">
+        <label for="opsearch" class="hidden">RWJMS site search</label><select name="search" class="hidden" id="opsearch"><option selected="selected" value="rwjms_google">RWJMS</option></select><label for="psearch" class="hidden">Search RWJMS</label><input type="text" id="psearch" size="15" name="query" value="Search RWJMS" onfocus="javascript:if(this.value=='Search RWJMS') {this.value='';}" onblur="javascript:if(this.value=='') {this.value='Search RWJMS'}"><input type="hidden" name="search" value="RWJMS_Google"><input type="image" src="http://rwjmsasset01.umdnj.edu/media/images/search_button.gif" id="srs" value="search" alt="search button"></form>
+      </div>
+      <div id="options"><a href="http://rwjms.umdnj.edu/search_options.html">More Options</a></div>
+      
+      
+      <!-- InstanceBeginEditable name="EditRegionBanner" --> <div id="staticbanner"><img src="http://rwjmsasset01.umdnj.edu/media/images/radiology_education_banner.jpg" alt=""></div><!-- InstanceEndEditable -->
+      
+
+  
+    </div>
+    
+    <table width="955" border="0" cellspacing="0" cellpadding="0" style="margin-top:184px;">
+      <tbody>
+        <tr>
+          <td id="greymenu" width="223"><img src="http://rwjmsasset01.umdnj.edu/media/images/grey_shadow.jpg" alt="Banner Image Here">
+            <div id="gmenu">  
+              <dl>
+                <dt><span class="plus"><a href="../index.html"><img src="http://rwjmsasset01.umdnj.edu/media/images/arrow_box.gif" alt="more">Tools</a></span>
+                </dt>
+              </dl>
+            </div>
+          </td>
+
+          <td id="tancontent" width="732"><!-- InstanceBeginEditable name="main_content" -->
+            <div class="container" style="width:690px">
+                <p class="main_heading">ALBI Grade Calculator</p>            
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label for="bilirubin">Total Bilirubin</label>
+                    <input type="text" class="form-control" id="bilirubin" placeholder="mg/dL" autocomplete="off">
+                  </div>
+                  <div class="form-group">
+                    <label for="albumin">Albumin</label>
+                    <input type="text" class="form-control" id="albumin" placeholder="g/dL" autocomplete="off">
+                  </div>
+                  <button id="submit" type="submit" class="btn btn-primary">Calculate</button>
+                </form>
+
+                <br />
+                <br />
+                <label id="result1">ALBI Score</label>
+                <br />
+                <br />
+                <label id="result2">ALBI Grade</label>
+
+                <br />
+                <br />
+                <p><strong>Equation</strong></p>
+                <p>ALBI score= (log10 (bilirubin (mg/dL)×17.1) × 0.66) - (albumin (g/dL)× 0.852)</p>
+    
+                <br />
+
+                <p><strong>Interpretation (Median survival in months)</strong></p>
+
+                <table class="table table-condensed">
+                    <tr>
+                        <th>ALBI Score</th>
+                        <th>ALBI Grade</th> 
+                        <th>Liver Function</th>
+                        <th>newly-diagnosed HCC patients</th>
+                        <th>Surgical resection</th>
+                        <th>treated with sorafenib</th>
+                        <th>Y90 radioembolization</th>
+                    </tr>
+                    <tr>
+                        <th><=-2.6</th>
+                        <th>1</th> 
+                        <th>Optimal</th>
+                        <th>85.6</th>
+                        <th>135.6</th>
+                        <th>12.7</th>
+                        <th>16.7</th>
+                    </tr>
+                    <tr>
+                        <th>> -2.6 and <= -1.39</th>
+                        <th>2</th> 
+                        <th>Moderately compromised</th>
+                        <th>46.5</th>
+                        <th>81.6</th>
+                        <th>7.2</th>
+                        <th>9.8</th>
+                    </tr>
+                    <tr>
+                        <th>> -1.39</th>
+                        <th>3</th> 
+                        <th>Severely compromised</th>
+                        <th>15.5</th>
+                        <th>N/A</th>
+                        <th>3.6</th>
+                        <th>N/A</th>
+                    </tr>
+                </table>
+
+                <br />
+                <p><strong>Citation</strong></p>
+                <p>Johnson PJ, Berhane S, Kagebayashi C, et. al. Assessment of Liver Function in Patients With Hepatocellular Carcinoma: A New Evidence-Based Approach-The ALBI Grade. J Clin Oncol. 2015 Feb 20;33(6):550-8.</p>
+                <p>Gui B, Weiner AA, Nosher J, et. al. Assessment of the Albumin-Bilirubin (ALBI) Grade as a Prognostic Indicator for Hepatocellular Carcinoma Patients Treated With Radioembolization. Am J Clin Oncol. 2017 Apr 17. doi: 10.1097</p>
+            </div>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>  
+    
+  <div id="footer">
+  <table id="footertable" width="955">
+    <tbody><tr>
+      <td width="290" id="footone">&nbsp;&nbsp;&nbsp;</td>
+      
+      <td id="footercenter"><p>Robert Wood Johnson Medical School</p>
+      <a href="http://rwjms.umdnj.edu">RWJMS</a><span class="fpipe">|</span><a href="http://rwjms.umdnj.edu/about_rwjms/about/admin_listing.html">Contact RWJMS</a><span class="fpipe">|</span><a href="http://rwjms.umdnj.edu/about_rwjms/campus_directions.html">Campus Directions</a></td>
+      
+      <td width="290" id="footerright"><p><span id="icon_links"><a href="http://rwjms.umdnj.edu/iTunesU/">iTunes U<img src="http://rwjmsasset01.umdnj.edu/media/images/itunes.gif" alt="iTunes"></a></span></p>
+    </td>
+    </tr>
+    <tr>
+      <td colspan="3" id="copyleft">© 2015 Robert Wood Johnson Medical School, all rights reserved.</td>
+     </tr> 
+  </tbody></table>
+  </div> 
+  </div>  
+  
+  <!-- InstanceEnd -->
+  <div id="shadowbox_container"><div id="shadowbox_overlay"></div><div id="shadowbox"><div id="shadowbox_nav"><a id="shadowbox_nav_close" title="Close" onclick="Shadowbox.close()"></a></div><div id="shadowbox_title"><div id="shadowbox_title_inner"></div></div><div id="shadowbox_body"><div id="shadowbox_body_inner"></div><div id="shadowbox_loading"><div id="shadowbox_loading_indicator"></div><span><a onclick="Shadowbox.close();">Cancel</a></span></div></div><div id="shadowbox_info"><div id="shadowbox_info_inner"><div id="shadowbox_counter"></div><div class="shadowbox_clear"></div></div></div></div></div></body></html>
