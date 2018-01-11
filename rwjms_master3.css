@@ -1,0 +1,968 @@
+@charset "UTF-8";
+
+body {
+    font: 12px/16px verdana, san-serif ;
+    color:#222;
+    margin:12px 0px;
+	padding: 0;
+    text-align: center;
+    background-color:#C6BFB5;
+	background-image:url("http://rwjmsasset01.umdnj.edu/media/images/pattern2.gif");
+	
+}
+img {
+    border:0;
+	}
+div, td { 
+     font: 12px/16px verdana, san-serif  ;
+	 }
+a:link, a:visited  { color:#990000 }
+a:hover, a:active  { color:#222 }	 
+#container {
+    width: 955px;
+    margin: 0 auto;
+    background-color:#fff;
+    text-align:left;
+	border:1px solid #666;
+	padding:0;
+ }
+
+#umdnjlogo {
+    margin:6px 0 0 12px;
+	}
+form, input { 
+    margin:0;
+	font-size:11px;
+	display:inline;
+	}
+#search	{
+    position:absolute;
+	top:10px;
+	left:300px;
+	width:360px;
+	color:#fff;
+	}
+#flash {
+    width:955px;
+	height:172px;
+	position:relative;
+	top:0px;
+	margin:0;
+	border:0;
+	padding:0;
+}
+#staticbanner{
+    width:955px;
+	height:184px;
+	position:absolute;
+	top:104px;
+	left:0;
+	margin:0;
+	border:0;
+	padding:0;
+	z-index:1;
+	}
+	
+#maintext {
+     width:670px;
+	 padding: 30px 30px 30px 35px;
+	 vertical-align:top;
+	 }
+#fulltext {
+     width:955px;
+	 padding: 20px 30px 30px 35px;
+	 vertical-align:top;
+	 }	 
+#highlights	{
+     width:225px;
+	 padding: 40px 30px 30px 0;
+	 vertical-align:top; 
+	
+	 }
+	 	
+#Accordion1 {
+    width:285px;
+}
+
+#Accordion2 {
+    width:455px;
+}
+		
+
+	 
+#icon_links	{
+	width:105px;
+	color:#fff;
+	line-height:33px;
+	font-size:11px;
+	float:right;
+	display:inline;
+	
+	
+	}
+#icon_links img {
+     display:inline;
+	 vertical-align:middle;
+	 margin-left:3px;
+	}
+#icon_links a:link, #icon_links a:visited {
+     text-decoration:none;
+	 color:#222;
+	 }
+#icon_links a:hover, #icon_links a:active {
+     text-decoration:none;
+	 color:#990000;
+	 }	 
+	
+/* menu*/
+dt, dl, dd, ul, li {
+    list-style-type: none;
+    margin: 0 ;
+    padding: 0;
+    background-color:transparent;
+    vertical-align:middle;
+
+}
+
+#cileft {
+   margin-left:10px;
+   }
+
+dt {
+    text-align: left;
+	line-height:27px;
+	}
+#first { 
+    margin:0 0 0 298px !important;
+	vertical-align:middle;
+	}
+
+
+#topmenu dt{
+    font-size:12px;
+	}
+
+#menu {
+   position : absolute;
+    top: 276px;
+	width:955px;
+	font-size:11px;
+	height:21px;
+	background-color:#e4d9c0;
+	background-image:url("http://www.cinj.org/media/images/sub_back.gif");
+	background-repeat:repeat-x;
+	background-position:bottom;
+}
+
+#topmenu dl, #menu dl {
+    float:left;
+}
+
+
+#menu li, #topmenu li {
+    display: inline;
+    font-size:11px;
+    margin:0 3px 0 3px;
+
+}
+#menu ul, #topmenu ul  {
+    margin-left:15px;
+	}
+
+#menu a:link, #menu a:visited, #topmenu a:link, #topmenu a:visited {
+    text-decoration: none;
+     color: #222;
+}
+
+#menu a:hover, #menu a:active, #topmenu a:hover, #topmenu a:active {
+    text-decoration: none;
+    color: #990000;
+
+}
+
+#smenu1, #smenu2, #smenu3, #smenu4, #smenu5, #smenu6, #smenu7, #smenu8,  #smenu9 {
+    display:none;
+	position: absolute;
+    left: 0;
+    top:21px;
+    font-size: 11px;
+    width: 955px;
+    height: 21px;
+    background-color:#dedede;
+    margin:0;
+    z-index:1000;
+	
+}
+
+#tbmenu1, #tbmenu2, #tbmenu3, #tbmenu4, #tbmenu5, #tbmenu6, #tbmenu7, #tbmenu8, #tbmenu9 {
+    display:none;
+	font-weight:bold;
+	text-align:left;
+    height:27px;
+    line-height:27px;
+	vertical-align:middle;
+	padding:0 5px;
+	margin:0;
+	float:left;
+	border-right:1px solid #999;
+	background-image:url("http://rwjmsasset01.umdnj.edu/media/images/top_back.gif");
+	background-repeat:repeat-x;
+}
+#tmenu1, #tmenu2, #tmenu3, #tmenu4, #tmenu5, #tmenu6{
+    height:27px;
+	line-height:27px;
+	vertical-align:middle;
+	padding:0 5px;
+	float:left;
+	margin:0;
+	text-align:left;
+	border-right:1px solid #999;
+	}	
+#tmenu6  {
+    border:0 !important;
+	}	
+
+#bmenu1, #bmenu2, #bmenu3, #bmenu4, #bmenu5, #bmenu6, #bmenu7, #bmenu8, #bmenu9 {
+    display:none;
+	font-weight:bold;
+	text-align:left;
+    height:22px;
+    line-height:21px;
+	vertical-align:middle;
+	padding:0 8px;
+	margin:0;
+	float:left;
+	border-right:1px solid #999;
+	background-image:url("http://www.cinj.org/media/images/cit_back.gif");
+	background-repeat:repeat-x;
+}
+#bmenu1 {border-left:1px solid #999;}
+#rmenu1, #rmenu2, #rmenu3, #rmenu4, #rmenu5, #rmenu6, #rmenu7, #rmenu8, #rmenu9 {
+    height:21px;
+	line-height:21px;
+	vertical-align:middle;
+	padding:0 8px;
+	float:left;
+	margin:0;
+	text-align:left;
+	border-right:1px solid #999;
+	}	
+ #rmenu9 {
+    border:0;
+	}
+.pipe {
+    color:#999;
+	margin:0 0 0 4px;
+	}	
+		
+.tmenu {	
+    height:27px;
+	line-height:27px;
+	vertical-align:middle;
+	padding:0 7px;
+	float:left;
+	margin:0;
+	text-align:left;
+	border-right:1px solid #999;
+	font-size:12px;
+	}
+
+
+
+/*home only*/
+.small {font-size:10px}
+.tspace{margin-top:44px;}
+#hmain {
+     width:670px;
+	 padding: 50px 30px 30px 35px;
+	 vertical-align:top;
+	 }
+#hhigh	{
+     width:285px;
+	 padding: 50px 30px 30px 0;
+	 vertical-align:top; 
+	 }
+
+#query {
+    margin-left:8px;
+	}
+		
+#onco {
+      float:right;
+	  margin:10px 10px 0 0 ;
+	  }	
+	
+.arrow {
+       	vertical-align:top;
+		margin: 4px 0 0 3px;
+		}
+.pubs {margin:0 0 0 8px;}		
+	
+	
+.AccordionPanelContent a:link, .AccordionPanelContent a:visited {
+       text-decoration:none;
+	   color:#990000;
+	   }
+	   
+.AccordionPanelContent a:hover, .AccordionPanelContent a:active {
+       text-decoration:none;
+	   color:#666;
+	   }
+	   
+.AccordionPanelContent p  {
+       margin: 6px 0 12px 0;
+	   padding:0;
+	   line-height:14px;
+	   }	   
+	   
+#pubstop {
+       width:260px;
+	   height:210px;
+	   background-image:url("http://rarwjms03.umdnj.edu/cinjweb/cinj/media/images/oncolyte.png");
+	   background-repeat:no-repeat;	 
+	   background-position: 10px right;  	   
+	   
+}
+	
+#ptop {
+    	
+	  padding:60px 0 0 8px;
+	  font-size:11px;
+	  
+	}
+#bannerbottom{
+   height: 14px;
+    background-color:#e4d9c0;
+	border-top: 1px solid #a9a9a9;
+    margin:0;
+}
+
+
+#contentarea {
+     width:955px;
+	 border:0;
+	 margin:184px 0 0 0;
+	 padding:0;
+	 }
+
+		 
+#tancontent {
+     width:732px;
+	 background-image:url("http://rwjmsasset01.umdnj.edu/media/images/tan_blend.jpg");
+	 background-repeat:repeat-x;
+	 vertical-align:top;
+	 padding: 20px 24px 20px 20px;
+	 border-left:1px solid #fff;
+	 font-size:12px;
+}
+#tancontentfull {
+	 background-image:url("http://rwjmsasset01.umdnj.edu/media/images/tan_blend.jpg");
+	 background-repeat:repeat-x;
+	 background-position:0 1px;
+	 vertical-align:top;
+	 padding: 40px 24px 20px 20px;
+	 border-left:1px solid #fff;
+	 font-size:12px;
+	 width:925px;
+	 }
+
+#tancontentleft {
+     width:512px;
+	 background-image:url("http://rwjmsasset01.umdnj.edu/media/images/tan_blend.jpg");
+	 background-repeat:repeat-x;
+	 vertical-align:top;
+	 padding: 20px 12px 20px 20px;
+	 border-left:1px solid #fff;
+	 font-size:12px;
+}
+#tancontentright {
+     width:220px;
+	 background-image:url("http://rwjmsasset01.umdnj.edu/media/images/tan_blend.jpg");
+	 background-repeat:repeat-x;
+	 vertical-align:top;
+	 padding: 20px 12px 20px 20px;
+
+} 
+	 
+
+#plus1, #plus2, #plus3, #plus4, #plus5, #plus6, #plus7, #plus8, #plus9, #plus10, #plus11, .plus {
+     display:block; 
+	 cursor: pointer;
+	 }
+
+#subset1, #subset2, #subset3, #subset4, #subset5, #subset6, #subset7, #subset8, #subset9, #subset10, #subset11, #on1, #on2, #on3, #on4, #on5, #on6, #on7, #on8, #on9, #on10, #on11 {
+    display:none; 
+	
+	
+	
+}
+
+#minus1, #minus2, #minus3, #minus4, #minus5, #minus6, #minus7, #minus8, #minus9, #minus10, #minus11 {
+	 cursor: pointer;
+	 display:none;
+
+	 
+	 }
+ #greyleft {
+    
+	 vertical-align:top;
+	 background-image:url("http://rwjmsasset01.umdnj.edu/media/images/grey_blend.jpg");
+	 background-repeat:repeat-x;
+	 background-position: 0 1px;
+	 padding:14px 0 0 0;
+	 margin:0;
+	 width:30px;
+	 
+	 }	
+#greymenu {
+     width:223px;
+	 vertical-align:top;
+	 background-image:url("http://rwjmsasset01.umdnj.edu/media/images/grey_blend.jpg");
+	 background-repeat:repeat-x;
+	 
+	 }
+#gmenu {	 
+	 width:200px;
+	 vertical-align:top;
+	 margin: 0 0 24px 20px;
+	 }
+	 	 
+#gmenu ul{
+   padding: 0 0 0 20px;
+   margin:-6px 0 0 0;
+   
+   }	 
+#gmenu li{
+    padding	:0 0 4px 0;
+	margin:0;
+	font-size:11px;
+	} 
+#gmenu dt{
+   padding:4px 0 10px 0;
+   margin:0;
+   line-height:14px;
+   }
+#gmenu dd{   
+   paddng:0;
+   margin:0;
+   } 
+   	
+#gmenu a:link, #thirdtier p a:link, #gmenu a:visited, #thirdtier p a:visited {
+   text-decoration:none;
+   color:#222;
+   }
+#gmenu a:hover, #thirdtier p a:hover, #gmenu a:active, #thirdtier p a:active {
+   text-decoration:none;
+   color:#1f0292;
+   }
+   
+   
+
+#gmenu li a:link,  #gmenu li a:visited {
+   text-decoration:none;
+   color:#1f0292;
+   }
+#gmenu li a:hover,  #gmenu li a:active {
+   text-decoration:none;
+   color:#666;
+   } 
+
+   
+   
+#gmenu li p a:link, #gmenu li p a:visited {
+   text-decoration:none;
+   color:#1f0292;
+   }
+#gmenu li p a:hover, #gmenu li p a:active {
+   text-decoration:none;
+   color:#666;
+   }    		
+
+#gmenu img {
+   margin:0 4px 0 0;
+   }
+  
+.linkfix { display:block; margin: 0 0 0 13px; padding:0;}   
+  
+  
+#thirdtier {
+   width:200px;
+   margin-top:24px;
+   border:1px solid #e4d9c0;
+   background-color:#f2ede1;
+   background-image:url("http://rwjmsasset01.umdnj.edu/media/images/third_menu_back.jpg");
+   background-repeat:repeat-x;
+   }
+   
+#thirdtier p {
+   margin:6px 0 6px 12px;
+   background-image:url("http://rwjmsasset01.umdnj.edu/media/images/arrow_box.gif");
+   background-repeat:no-repeat;
+   background-position: 0 4px;
+   padding-left:14px;
+}
+#thirdtier dl{
+     margin:0 0 12px 12px;
+	 padding:0;
+	 }
+#thirdtier dt{
+     margin:-5px 0 0 0;
+	 padding:0;
+	 }
+#thirdtier dd{	
+     margin:-2px 0 6px 14px;
+	 padding:0;
+	 }
+#thirdtier dd a:link, #thirdtier dd a:visited {
+   text-decoration:none;
+   color:#1f0292;
+   font-size:11px;
+   }
+#thirdtier dd a:hover, #thirdtier dd a:active {
+   text-decoration:none;
+     color:#222;
+   font-size:11px;
+   }
+  
+ #courseyear{
+   display:block;
+   margin:0 0 6px 0;
+   font-size:10px;
+   } 
+  
+  
+#tancontent ul, #tancontentleft ul, #cmecontent ul, #tancontentfull ul {
+   margin:6px 0 6px 24px;
+   list-Style-image:url("http://rwjmsasset01.umdnj.edu/media/images/greyblock.gif");
+   }
+   
+#tancontent li, #tancontentleft li, #cmecontent li, #tancontentfull li {
+   margin:6px 0 8px 0;
+   }
+
+#cmecontent{
+  padding:18px 24px 24px 34px;
+  }
+   
+.officers {
+       height:100px;
+	   vertical-align:top;
+	   margin-bottom:40px;
+	   }
+	   
+.officers img  {
+     float:left;
+	 margin-right:9px;
+	 } 
+	 
+.publication a {text-decoration:none;}
+
+.cover {
+   margin: 10px 0 6px 0;
+   }
+#currenti {
+   background:#27177f; 
+      color:#fff;
+	  }  
+.publication {
+   margin-bottom:28px;
+   }     
+h1 strong {
+  font-weight:normal;
+  } 
+#match p {margin:5px 0 0 0;} 
+#match h2{ size:12px; margin:20px 0 5px 0;}
+
+
+#bc{ display:block; font-size:21px; padding:16px 0 0 32px;}
+    
+ #boxin {
+   width:299px;
+   height:260px;
+   margin-top:24px;
+   border:1px solid #e4d9c0;
+   background-color:#f2ede1;
+   background-image:url("http://rwjmsasset01.umdnj.edu/media/images/third_menu_back.jpg");
+   background-repeat:repeat-x;
+   padding:12px 0 0 12px;
+ 
+   
+   
+   }
+   
+   #boxin a:link, #boxin a:hover, #boxin a:active, #boxin a:visited {
+         text-decoration:none;
+		
+		  }
+   #coat { margin:3px 0;}
+   
+     #boxin p { text-align:right; 
+	            margin:0 12px 0 0;}
+				
+   #point {margin:0 3px 0 0 ;
+         }
+	
+	#wplj {
+	       background-image:url("http://rwjmsasset01.umdnj.edu/media/images/09match.gif");
+		   background-repeat:no-repeat;
+		   background-position: center 65px;
+		   width:300px;
+		   height:340px;
+		   text-align:center;
+		   padding-top:30px
+		   }
+	#wc_link{ margin-top:180px;
+	}
+	#wc_link a:link, #wc_link a:hover, #wc_linka:active, #wc_link a:visited {
+	       text-decoration:none;
+		   }
+		   
+	#wplj b {	color:#444;
+	           font-size:14px;
+			   font-weight:normal
+			   } 
+			   
+/*clinical research*/			    
+#trials {
+    width:860px;
+}
+	
+#trials td {	
+   padding-right:18px;
+   vertical-align:top;
+   }
+#ctc {
+   float:right;
+   margin: 3px 0 0 4px;
+   }
+#trials p {margin:6px 0 20px 0;}
+	
+#trials h4{ cplor:#222;
+font-size:15px;
+line-height:19px;
+margin: 6px 0 10px 0;
+}
+.nt {font-weight:normal;
+      
+	  font-size:14px;
+	  }
+
+.details{ 
+    color:#666;
+	cursor:pointer}
+.lm a {text-decoration:none;}
+.lm {
+     display:block;
+	 margin:0;
+
+	 }
+/* patient care*/
+
+#superdocs{ 
+  float:right;
+  margin-right:18px;
+  /*width:297px;*/
+  width:320px;
+  height:125px;
+  background-image:url("http://rwjmsasset01.umdnj.edu/media/images/topdocs.jpg");
+  background-repeat:no-repeat;
+  background-position: 23px 0;
+  }
+#superdocs p {
+   margin: 68px 0 0 24px;
+   }
+ #superdocs a:link, #superdocs a:active, #superdocs a:hover, #superdocs a:visited {
+text-decoration:none; 
+} 
+/*research*/	  
+#rmain {margin-top:134px;} 
+#researchmenu {
+    
+	 vertical-align:top;
+	 background-image:url("http://rwjmsasset01.umdnj.edu/media/images/grey_blend.jpg");
+	 background-repeat:repeat-x;
+	 background-position: 0 1px;
+	 padding:24px 0 0 0;
+	 margin:0;
+	 width:30px;
+	 
+	 } 
+#researchfull {
+	 background-image:url("http://rwjmsasset01.umdnj.edu/media/images/tan_blend.jpg");
+	 background-repeat:repeat-x;
+	 background-position:0 1px;
+	 vertical-align:top;
+	 padding: 60px 24px 20px 20px;
+	 border-left:1px solid #fff;
+	 font-size:12px;
+	 width:925px;
+	 }
+	 
+	 
+	 
+	 
+	 
+	 
+/*footer styles*/	
+		
+#footer{
+    background-color:#e4d9c0;
+	width:955px;
+	height:73px;
+	margin:0;
+	padding: 0;
+	font-size:9px;
+	}
+
+#footerlinks  p {
+    margin: 2px 0  2px 35px;
+	font-size:9px;
+	
+		}
+
+.fpipe {
+    color:#222;
+	margin:0 10px;
+	}
+#footer a:link, #footer a:visited {
+    text-decoration:none;
+	color:#990000;
+	
+	}
+#footer a:hover, #footer a:active {
+    text-decoration:none;
+	color:#222;
+
+}
+
+#footerlinks {
+     display:inline;
+	 width:470px;
+	 float:left;
+	 }	
+ 
+	 
+#footertable {
+      margin: 0;
+	  padding:0px;
+	  width:955px;
+	  }	
+	  
+#footertable td{
+     vertical-align:top;
+	 font-size:10px;
+	 margin:0;
+	
+	 }
+	   
+#footertable p {
+      margin:3px 0 0 0;
+	  padding:0;
+	  color:#444;
+	  font-size:10px;
+	  }
+	  
+#footone { padding-left:34px;
+}
+  	
+#footerright {
+height:28px;
+text-align:right;
+padding-right:34px;
+ }
+ 
+#footercenter {
+height:28px;
+text-align:center;
+}
+ 
+#copyleft {
+   font-size:9px;
+   text-align:center;
+   color:#444;
+  padding-top:10px;
+   }
+   
+#copyrt {
+   font-size:9px;
+   text-align:center;
+   color:#444;
+  padding-top:3px;
+   } 
+ 
+   
+/*footer end*/		 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+/*01-30-09 revisions - menu & footer */
+#topon { 
+	font-weight:bold;
+	text-align:left;
+    height:27px;
+    line-height:27px;
+	vertical-align:middle;
+	padding:0 5px;
+	margin:0;
+	float:left;
+	border-right:1px solid #999;
+	background-image:url("http://rwjmsasset01.umdnj.edu/media/images/top_back.gif");
+	background-repeat:repeat-x;
+    }
+	
+	
+#submenu1,#submenu2,#submenu3,#submenu4,#submenu5,#submenu6 {
+    display:none;
+	position: absolute;
+    left: 0;
+    top:24px;
+    font-size: 11px;
+    width: 955px;
+    height: 21px;
+	line-height:17px;
+    background-color:#e4d9c0;
+	border-bottom: 1px solid #a9a9a9;
+    margin:0;
+    z-index:1020;
+	
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+/*new search styles*/
+
+#top {
+  
+	background-image:url("http://rwjmsasset01.umdnj.edu/media/images/top_back.jpg");
+	background-repeat:no-repeat;
+	width: 955px;
+	height:104px;
+	position:relative;
+	top:0;
+	margin:0;
+	padding:0;
+	}
+#topmenu {
+    position : absolute;
+    left: 0px;
+    top: 77px;
+	z-index:1000;
+}
+#banner{
+    width:955px;
+	height:184px;
+	position:absolute;
+	top:104px;
+	left:0;
+	margin:0;
+	border:0;
+	padding:0;
+	z-index:1;
+	border-top:1px solid #222;
+	background-color:#666;
+	}	
+	
+	
+	
+#quick {
+	  position:absolute;
+	  top:6px;
+	  left:608px;
+	  width:100px;
+	  height:18px;
+	  font-size:10px;
+}
+#searchnew {
+	  position:absolute;
+	  top:6px;
+	  left:708px;
+	  width:133px;
+	  height:18px;
+	
+	}
+	
+	
+#options {
+	  position:absolute;
+	  top:6px;
+	  left:848px;
+	  width:100px;
+	  height:18px;
+	 font-size:10px;
+	
+	}
+#options a:link, #options a:visited, #quick a:link, #quick a:visited {
+	text-decoration:none;
+	color:#fff;
+}
+   
+#options a:hover, #options a:active, #quick a:hover, #quick a:active {
+	text-decoration:none;
+	color:#e4d9c0;
+}	
+	
+#psearch {
+	  position:absolute;
+	  top:0;
+	  left:0;
+	  border:0;
+	  margin:0;
+	  height:18px;
+	  font-size:10px;
+	  color:#555;
+      line-height:16px;
+	  background:#fff  url("http://rwjmsasset01.umdnj.edu/media/images/search_back.gif") no-repeat;
+	  width:116px;
+	  padding:0 0 0 10px;
+	
+	}	
+	
+	
+#srs { 
+      position:absolute;
+	  top:0px;
+	  left:116px;
+	  border:0; 
+      padding:0; 
+	  line-height:18px;
+	  }
+.hidden {display:none;}	 
+
+#linkback {
+	  width:330px;
+	  height:65px;
+	  position: absolute;
+	  top:5px;
+	  left:15px;
+	  border:0;
+}
+
+
+
+/* ol fix */
+#tancontent ol, #tancontentleft ol, #cmecontent ol, #tancontentfull ol, ol li{
+   margin:6px 0 6px 0x;
+   list-style-type:decimal;
+   }
+  </style> 
+
+
+	 
